@@ -1,5 +1,7 @@
 # Demo of: STOPnik + Spring Boot + React
 
+This demo is related to https://stopnik.webish.dev/
+
 This repository contains three folders
 
 - `authorization-server` with a given STOPnik configuration for this demo
