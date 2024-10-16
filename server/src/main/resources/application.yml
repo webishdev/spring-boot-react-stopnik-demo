@@ -1,0 +1,10 @@
+
+spring:
+  application:
+    name: spring-boot-react-stopnik-demo
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8082
