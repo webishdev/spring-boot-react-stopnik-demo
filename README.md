@@ -4,9 +4,9 @@ This demo is related to https://stopnik.webish.dev/
 
 This repository contains three folders
 
-- `authorization-server` with a given STOPnik configuration for this demo
-- `server` which implements a Spring Boot server using STOPnik as resource server (Java)
-- `client` which implements a React Client using STOPnik (TypeScript)
+- `authorization-server` with a given **STOPnik** configuration for this demo
+- `server` which implements a Spring Boot server using **STOPnik** as resource server (Java)
+- `client` which implements a React Client using **STOPnik** (TypeScript)
 
 ## General usage
 
@@ -16,13 +16,13 @@ This repository contains three folders
 
 ## Authorization server
 
-### Prerequirements
+### Prerequisites
 
 - Docker
 
 ### Usage
 
-Start STOPnik with Docker
+Start **STOPnik** with Docker
 
 `docker run --rm -p 8082:8080 -v ${PWD}/config.yml:/config.yml -v ${PWD}/ecdsa521key.pem:/ecdsa521key.pem ghcr.io/webishdev/stopnik:latest`
 
@@ -30,7 +30,7 @@ or use the provided `start-docker.sh`
 
 ## Spring Boot server
 
-### Prerequirements
+### Prerequisites
 
 - Java 21
 
@@ -45,7 +45,7 @@ With a valid Bearer token in HTTP Authorization header the following endpoints c
 
 A simple GET request within a Browser will not allow to access that endpoints, because of missing Bearer token.
 
-During testing a Bearer token can be aquired with tools like Postman.
+During testing a Bearer token can be acquired with tools like Postman.
 
 The Spring Boot server can be started with the provided Maven wrapper.
 
@@ -53,7 +53,7 @@ The Spring Boot server can be started with the provided Maven wrapper.
 
 ### Configuration
 
-The Spring Boot server is confiured to use an authorization server located at http://localhost:8082, and will check for a `roles` claim to map it `GrantedAuthority` objects.
+The Spring Boot server is configured to use an authorization server located at http://localhost:8082, and will check for a `roles` claim to map it `GrantedAuthority` objects.
 
 
 ## React client
