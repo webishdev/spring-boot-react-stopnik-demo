@@ -28,6 +28,10 @@ Start **STOPnik** with Docker
 
 or use the provided `start-docker.sh`
 
+### Configuration
+
+Two users exists `foo` with password `bar` which is a normal user, and `bar` with password `foo` with is an Admin user and can access the Admin endpoint.
+
 ## Spring Boot server
 
 ### Prerequisites
