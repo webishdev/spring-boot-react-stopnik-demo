@@ -30,7 +30,9 @@ or use the provided `start-docker.sh`
 
 ### Configuration
 
-Two users exists `foo` with password `bar` which is a normal user, and `bar` with password `foo` with is an Admin user and can access the Admin endpoint.
+Two users exists
+-  `foo`, with password `bar`, which is an normal user
+-  `bar`, with password `foo`, which is an Admin user and can access the Admin endpoint
 
 ## Spring Boot server
 
@@ -57,7 +59,7 @@ The Spring Boot server can be started with the provided Maven wrapper.
 
 ### Configuration
 
-The Spring Boot server is configured to use an authorization server located at http://localhost:8082, and will check for a `roles` claim to map it `GrantedAuthority` objects.
+The Spring Boot server is configured to use an authorization server located at http://localhost:8082, and will check for a `roles` claim to map it into `GrantedAuthority` objects.
 
 
 ## React client
