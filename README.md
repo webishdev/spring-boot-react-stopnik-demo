@@ -42,7 +42,7 @@ Two users exists
 
 ### Usage
 
-The Spring Boot server provides a simple Hello World API endpoint and an additional Admin endpoint, both are protected only differ only by the allowed role.
+The Spring Boot server provides a simple Hello World API endpoint and an additional Admin endpoint, both are protected and only differ by the allowed role.
 
 With a valid Bearer token in HTTP Authorization header the following endpoints can be accessed with GET
 
